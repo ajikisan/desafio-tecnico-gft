@@ -37,7 +37,7 @@ public class NumeroReverso {
         //  Utilização da classe String Builder que contém o método Reverse
             StringBuilder stringBuilder = new StringBuilder(numeroInformadoString);
                System.out.println("O reverso do número informado é: " + stringBuilder.reverse());
-         break; //utilizado para parar o laço de repetição e lenght para ler o tamanho da string
+         break; //utilizado para parar o laço de repetição e length para ler o tamanho da string
            }else if(numeroInformadoString.length() < 4) {
             System.out.println("Número imformado não está intervalo de 4 dígitos, tente novamente.");
         }

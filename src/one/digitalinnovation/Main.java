@@ -2,13 +2,19 @@ package one.digitalinnovation;
 
 import one.digitalinnovation.desafios.Macaco;
 import one.digitalinnovation.desafios.NumeroReverso;
+import one.digitalinnovation.desafios.funcionarios.Consultor;
+import one.digitalinnovation.desafios.funcionarios.Vendedor;
 
 public class Main {
 
     public static void main(String[] args) {
-	 // Chamando a classe NumeroReverso
+
+    // Número Reverso
+    // Chamando a classe NumeroReverso
         NumeroReverso.numeroReverso();
 
+
+    // Macaco
     // Chamando a classe Macaco
 
         Macaco macaco1 = new Macaco();
@@ -31,11 +37,20 @@ public class Main {
         macaco1.digerir();
         macaco1.digerir();
 
+        macaco2.digerir();
+        macaco2.digerir();
+        macaco2.digerir();
+        macaco2.digerir();
+        System.out.println("===================");
 
-        macaco2.digerir();
-        macaco2.digerir();
-        macaco2.digerir();
-        macaco2.digerir();
 
-    }
+     //Pacote Funcionários - Criação de objetos para ver se a lógica está correta
+
+        Vendedor vendedor = new Vendedor("Olaf", 1345465464L, 10, 5);
+        System.out.println("Salário do Vendedor(a): " + vendedor.getNome() + " " +  vendedor.calcularSalario());
+        System.out.println("---------------------------------------");
+
+        Consultor consultor = new Consultor("Mirian", 1215564465L, 100.5d,140 );
+        System.out.println("Salário do Consultor (a): " +  consultor.getNome() + " " + consultor.calcularSalario());
+     }
 }
